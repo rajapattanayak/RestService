@@ -1,7 +1,5 @@
 package com.scraper.service;
 
-import java.util.List;
-
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -9,11 +7,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.json.JSONArray;
-
 import com.scraper.county.County;
 import com.scraper.county.County.Idata;
-import com.scraper.county.data.Hays.HaysData;
 
 /*
  * Version 1 Services for the Scraper
