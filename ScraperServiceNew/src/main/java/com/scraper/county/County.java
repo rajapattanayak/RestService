@@ -50,7 +50,7 @@ public final class County implements ICounty {
 	{
 		if (getName().equals(Name.HAYS.toString())) {
 			//Get Hays data			
-			Hays hays = new Hays();
+			HaysService hays = new HaysService();
 			hays.pullData();
 			final List<HaysData> data  = hays.getListData();
 			

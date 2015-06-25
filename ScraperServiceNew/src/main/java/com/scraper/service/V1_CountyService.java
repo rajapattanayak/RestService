@@ -110,15 +110,7 @@ public class V1_CountyService {
 		if (County.Name.valueOf(countyName.toUpperCase()) == County.Name.HAYS) {
 			county = new County(County.Name.HAYS.toString());
 			county.pullData();
-			Idata data = county.getData();				
-			
-//				if (outputFormat.equalsIgnoreCase("json")) {
-//					return Response.status(200).entity(data.getJsonData()).build();
-//				}
-//				if (outputFormat.equalsIgnoreCase("xml")) {
-//					return Response.status(200).entity(data.getListData()).build();
-//				}
-
+			Idata data = county.getData();
 			return Response.status(200)
 					.entity(data.getListData())
 					.header(HttpHeaders.CONTENT_TYPE, "json".equals(outputFormat)
