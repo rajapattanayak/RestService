@@ -66,7 +66,7 @@ public class V1_Service {
 				county.pullData();
 				Idata data = county.getData();
 				
-				response = data.getJsonData().toString();		
+				response = data.	
 			}
 		} catch(Exception e) {
 			e.printStackTrace();
