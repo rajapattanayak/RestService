@@ -69,7 +69,7 @@ public class V1_CountyService {
 	
 	@GET
 	@Path("/messages/json")
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public List<TestMessage> getTestMessageJson() throws Exception			
 	{
 		List<TestMessage> messages = new ArrayList<TestMessage>();
