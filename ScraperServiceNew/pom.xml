@@ -7,10 +7,10 @@
     <artifactId>ScraperServiceNew</artifactId>
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ScraperServiceNew</name>
+    <name>ScraperService</name>
 
     <build>
-        <finalName>ScraperServiceNew</finalName>
+        <finalName>ScraperService</finalName>
         <pluginManagement>
         	<plugins>
             	<plugin>
@@ -23,6 +23,18 @@
     	                <target>1.7</target>
                 	</configuration>
             	</plugin>
+            	<plugin>
+    				<groupId>org.apache.tomcat.maven</groupId>
+    				<artifactId>tomcat7-maven-plugin</artifactId>
+    				<version>2.2</version>
+    				<configuration>
+        				<url>http://localhost:8080/manager/text</url>
+        				<server>TomcatServer7</server>
+        				<path>/ScraperService</path>
+        				<username>praja</username>
+        				<password>praja</password>
+    				</configuration>
+				</plugin>
         	</plugins>
         </pluginManagement>
     </build>

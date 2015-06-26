@@ -1,7 +1,6 @@
 package com.scraper.county;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 
@@ -11,12 +10,11 @@ public class HaysService {
 	
 	private List<HaysData> _data;
 
-	public List<HaysData> getListData() {
+	public List<HaysData> getData() {
 		return _data;
-	}
-	
-	//New Method
-	public void pullData() {
+	}	
+
+	public void scrapeData() {
 		_data = new ArrayList<HaysData>();
 		//Code to pull data from website
 		

@@ -3,12 +3,12 @@ package com.scraper.message;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class TestMessage {
+public class ServiceInfo {
 	
 	private String serviceName;
 	private String serviceVersion;
 
-	public TestMessage() 	{}
+	public ServiceInfo() 	{}
 	
 	public String getServiceName() {
 		return serviceName;

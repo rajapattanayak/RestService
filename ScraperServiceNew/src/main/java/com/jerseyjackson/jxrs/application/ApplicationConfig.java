@@ -23,7 +23,7 @@ public class ApplicationConfig extends Application {
 	
 		
 		resources.add(com.jerseyjackson.jxrs.provider.JacksonJsonProvider.class);
-		resources.add(com.scraper.message.TestMessage.class);
+		resources.add(com.scraper.message.ServiceInfo.class);
 		resources.add(com.scraper.service.V1_CountyService.class);
 			
 		System.out.println("REST configuration ended successfully.");
