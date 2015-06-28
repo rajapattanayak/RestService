@@ -9,7 +9,7 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import com.scraper.county.model.HaysData;
+import com.scraper.county.model.hays.HaysData;
 import com.scraper.exception.ScraperException;
 import com.scraper.message.ErrorMessage;
 
@@ -27,7 +27,7 @@ public class HaysService {
 	public HaysData getDataFromId(String id) {
 		validate(id);		
 
-		ErrorMessage errmsg = new ErrorMessage("No data found with given id :", 404);
+		ErrorMessage errmsg = new ErrorMessage("No data found with given id:" + id, 404);
     	Response response = Response.status(Status.NOT_FOUND)
     								.entity(errmsg)
     								.build();

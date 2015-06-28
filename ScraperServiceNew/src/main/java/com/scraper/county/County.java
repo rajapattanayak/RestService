@@ -2,7 +2,7 @@ package com.scraper.county;
 
 import java.util.List;
 
-import com.scraper.county.model.HaysData;
+import com.scraper.county.model.hays.HaysData;
 import com.scraper.county.services.HaysService;
 
 

@@ -10,7 +10,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.scraper.county.model.HaysData;
+import com.scraper.county.model.hays.HaysData;
 import com.scraper.county.services.HaysService;
 import com.scraper.exception.ScraperException;
 import com.scraper.message.ServiceInfo;

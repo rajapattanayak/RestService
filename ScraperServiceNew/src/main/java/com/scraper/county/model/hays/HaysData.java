@@ -1,4 +1,4 @@
-package com.scraper.county.model;
+package com.scraper.county.model.hays;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
