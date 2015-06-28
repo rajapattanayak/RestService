@@ -2,7 +2,7 @@ package com.scraper.exception;
 
 import java.io.Serializable;
 
-public class ScraperException extends Exception implements Serializable 
+public class ScraperException extends RuntimeException implements Serializable 
 {	
 	private static final long serialVersionUID = 1L;
 	
