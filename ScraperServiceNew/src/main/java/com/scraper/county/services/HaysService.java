@@ -1,4 +1,4 @@
-package com.scraper.county;
+package com.scraper.county.services;
 
 import java.util.ArrayList;
 import java.util.HashMap;
