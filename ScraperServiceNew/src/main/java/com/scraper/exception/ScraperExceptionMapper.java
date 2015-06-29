@@ -10,16 +10,8 @@ import com.scraper.message.ErrorMessage;
 @Provider
 public class ScraperExceptionMapper implements ExceptionMapper<ScraperException> {
 	
-	static {
-		System.out.println("ScraperExceptionMapper being loaded");
-	}
-	
-	public ScraperExceptionMapper() {
-		System.out.println("ScraperExceptionMapper object being created");
-	}
 	@Override
-	public Response toResponse(ScraperException ex) {
-		System.out.println("calling custom exception response");
+	public Response toResponse(ScraperException ex) {		
 		ErrorMessage errorMsg = new ErrorMessage(ex.getMessage(),404);
 		return Response.status(Status.NOT_FOUND).entity(errorMsg).build();	}		
 }

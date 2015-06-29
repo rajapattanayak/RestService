@@ -7,8 +7,14 @@
      <!-- Register resources and providers under com.scraper.service package. -->
     <init-param>
         <param-name>jersey.config.server.provider.packages</param-name>
-        <param-value>com.scraper.resources</param-value>
+        <param-value>com.scraper.resources;com.scraper.authentication;com.scraper.exception</param-value>
     </init-param>
+    <!--
+    <init-param>
+        <param-name>com.sun.jersey.spi.container.ContainerRequestFilters</param-name>
+        <param-value>com.scraper.authentication.SecurityFilter</param-value>
+    </init-param>
+    -->
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>

@@ -3,8 +3,7 @@ package com.scraper.message;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class ServiceInfo {
-	
+public class ServiceInfo {	
 	private String serviceName;
 	private String serviceVersion;
 

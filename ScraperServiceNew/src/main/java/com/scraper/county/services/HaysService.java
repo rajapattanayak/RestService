@@ -21,21 +21,20 @@ public class HaysService {
 
 	public List<HaysData> getData() {
 		return _data;
-	}
-	
-	//To-do : Fix the user defined exception. Mapper is not being invoked.
+	}	
+
 	public HaysData getDataFromId(String id) {
 		validate(id);		
 
-		ErrorMessage errmsg = new ErrorMessage("No data found with given id:" + id, 404);
-    	Response response = Response.status(Status.NOT_FOUND).entity(errmsg).build();
+		//ErrorMessage errmsg = new ErrorMessage("No data found with given id:" + id, 404);
+    	//Response response = Response.status(Status.NOT_FOUND).entity(errmsg).build();
 		if(null == _dataMap || _dataMap.size() == 0) {
-			//throw new ScraperException( "No data found with given id : " + id);
-			throw new WebApplicationException(response);
+			throw new ScraperException( "No data found with given id : " + id);
+			//throw new WebApplicationException(response);
 		}
 		if (!_dataMap.containsKey(Integer.parseInt(id))) {
-			//throw new ScraperException( "No data found with given id : " + id);
-			throw new WebApplicationException(response);
+			throw new ScraperException( "No data found with given id : " + id);
+			//throw new WebApplicationException(response);
 		}
 
 		HaysData data = _dataMap.get(Integer.parseInt(id));		

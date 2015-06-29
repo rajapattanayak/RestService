@@ -3,9 +3,9 @@ package com.scraper.exception;
 import java.io.Serializable;
 
 public class ScraperException extends RuntimeException implements Serializable 
-{	
-	private static final long serialVersionUID = 1L;
-	
+{
+	private static final long serialVersionUID = -8195126064589542672L;
+
 	public ScraperException() {
         super();
     }
