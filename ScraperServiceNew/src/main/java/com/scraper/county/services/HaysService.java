@@ -28,9 +28,7 @@ public class HaysService {
 		validate(id);		
 
 		ErrorMessage errmsg = new ErrorMessage("No data found with given id:" + id, 404);
-    	Response response = Response.status(Status.NOT_FOUND)
-    								.entity(errmsg)
-    								.build();
+    	Response response = Response.status(Status.NOT_FOUND).entity(errmsg).build();
 		if(null == _dataMap || _dataMap.size() == 0) {
 			//throw new ScraperException( "No data found with given id : " + id);
 			throw new WebApplicationException(response);
@@ -50,9 +48,7 @@ public class HaysService {
         } catch(NumberFormatException e) {        	
             //throw new ScraperException( "Not able to process the request. id is not a number !!");
         	ErrorMessage errmsg = new ErrorMessage("Not able to process the request. id is not a number !!", 404);
-        	Response response = Response.status(Status.NOT_FOUND)
-        								.entity(errmsg)
-        								.build();
+        	Response response = Response.status(Status.NOT_FOUND).entity(errmsg).build();
         	throw new WebApplicationException(response);
         }
 
